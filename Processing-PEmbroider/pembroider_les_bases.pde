@@ -1,36 +1,29 @@
-// Example PEmbroider program
-import processing.embroider.*;
+// Example PEmbroider program. Pour des tutoriels et des explications voir le github de PEmbroider ici : https://github.com/CreativeInquiry/PEmbroider
+import processing.embroider.*; //importer la librairie PEmbroider (à télécharger au préalable)
 PEmbroiderGraphics E;
 
 void setup() {
 
-  // Starting up:
+  // A mettre dans le setup à chaque fois pour PEmbroider :
   noLoop();
   size(1200, 1200);
   E = new PEmbroiderGraphics(this, width, height);
-  String outputFilePath = sketchPath("test3bonshommes.dst");
+  String outputFilePath = sketchPath("test3bonshommes.dst"); //le .dst est un format de fichier de broderie
   E.setPath(outputFilePath); 
   
   //start drawing :
   E.beginDraw();
   E.clear();
   
-  //default stitches are too small and dense, the parameters below help. 
+  //default stitches are too small and dense, the parameters below help 
   E.strokeSpacing(3.0);   // this spaces the stroke (outline) stitches by 2 pixels
   E.hatchSpacing(2.0);    // this spaces hatch (fill) stitches by 8 pixels
   E.setStitch(30,50,0.0); // (minimum stitch in px, desirable stitch length in px, resample noise)
 
-  //E.noStroke(); //disable outlining shape
   E.stroke(255,0,0); //rgb value for stroke
   E.strokeMode(E.TANGENT); //TANGENT = bordure suit le contour plutôt que 
                            //PERPENDICULAR = faire un point satin perpendiculaire.
   E.strokeWeight(10); //sets width of shapes' strokes.
-
-
-  //-------
-  // Content goes here:
-  //E.fill(0, 0, 0); 
-  //E.ellipse(400,400,200,50); //(posX,posY,lengthX,lengthY)
 
 //tutorial youtube : https://www.youtube.com/watch?v=BDE2Tx6HHLc
 
@@ -80,5 +73,5 @@ void setup() {
       //which you will have to manually remove after your design is embroidered. 
       //If you wanna see all the diagnostic stuff, call visualize(true, true, true);
   E.endDraw();  // Actually writes out the embroidery file.
-  //save("test3bonshommes.png"); //saves a screenshot of the preview
+  //save("fichierimage.png"); //saves a screenshot of the preview
 }
