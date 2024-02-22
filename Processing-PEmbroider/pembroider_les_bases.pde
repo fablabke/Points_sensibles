@@ -2,7 +2,7 @@
 import processing.embroider.*; //importer la librairie PEmbroider (à télécharger au préalable)
 PEmbroiderGraphics E;
 
-void setup() {
+void setup() {  //on remarquera qu'il n'y a pas de void draw(), inutilisable avec PEmbroider.
 
   // A mettre dans le setup à chaque fois pour PEmbroider :
   noLoop();
