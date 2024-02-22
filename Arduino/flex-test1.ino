@@ -1,3 +1,5 @@
+/*Nous avons utilisé le plan de connection de ce tutoriel : https://www.instructables.com/How-to-use-a-Flex-Sensor-Arduino-Tutorial/ */
+
 const int flexPin = A0;  // Broche analogique à laquelle est connecté le capteur de flexion
 
 void setup() {
