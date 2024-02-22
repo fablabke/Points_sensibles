@@ -1,27 +1,11 @@
-//import processing.serial.*;
 
-//Serial myPort;  // Objet pour la communication série
-//int flexValue;  // Variable pour stocker la valeur du capteur de flexion
 
-//void setup() {
-//  size(800, 800);
-//  myPort = new Serial(this, "COM5", 9600);  // Remplacez "NomDuPortSérie" par le nom de votre port série
-//}
-
-//void draw() {
-//  if (myPort.available() > 0) {
-//    flexValue = Integer.parseInt(myPort.readStringUntil('\n').trim());  // Lire la valeur du port série
-//    // Utilisez la valeur du capteur de flexion comme vous le souhaitez
-//   println(flexValue);
-//  }
-  
-//  ellipse(400,400,flexValue/2,flexValue/2);
-//}
+//Pour importer des données de Arduino : 
 
 import processing.serial.*;
 
-Serial myPort;  // Create object from Serial class
-static String val;    // Data received from the serial port
+Serial myPort;  // Objet pour la communication série
+static String val;    // Variable = la valeur du capteur flex (data reçue du capteur)
 int sensorVal = 0;
 
 void setup()
@@ -29,7 +13,7 @@ void setup()
    size(800, 800);
    noStroke();
   noFill();
-  String portName = "COM5";// Change the number (in this case ) to match the corresponding port number connected to your Arduino. 
+  String portName = "COM5";// Remplacez "COM5" par le nom de votre port série
 
   myPort = new Serial(this, portName, 9600);
 }
