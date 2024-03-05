@@ -49,10 +49,26 @@ _À gauche, l'Arduino raccordé à un capteur flex. À droite, les différents e
 
 ### 2. Processing : utiliser les données du capteur flex et la librairie PEmbroider.
 
+Le fichier Processing du projet est disponible [ICI](https://github.com/fablabke/Points_sensibles/tree/main/Processing-PEmbroider). 
 
+Dans le dossier Archives, vous trouverez également des fichiers Processing qui permettent de se familiariser en plusieurs étapes au lien entre Arduino et Processing, ainsi qu'à la librairie PEmbroider. 
 
+[PEmbroider](https://github.com/CreativeInquiry/PEmbroider) est une librairie créée par Golan Levin, Lingdong Huang, and Tatyana Mustakos qui permet de générer des fichiers de broderie en utilisant Processing. Elle permet donc de générer directement certains types de points tout en les combinant avec les possibilités nombreuses de Processing, qui est au départ un logiciel d’art génératif. 
 
+Leur Github est très riches en explications, exemples et liste de commandes. Il faut cependant être familiarisé avec Processing pour pouvoir l'exploiter au maximum, étant donné que la librairie se base beaucoup sur des commandes existantes, les transposant simplement à la génération d'un fichier de broderie plutôt que d'un visuel simple.
 
+Voici quelques conseil qui m'ont aidé durant mes expérimentations : 
+- PEmbroider ne fonctionne que dans le "void setup", pour un motif génératif en direct et donc pour pouvoir utiliser les données du flex en temps réel, il faut donc créer une loop dans le "setup" au lieu de travailler dans le "draw".
+- Pour appliquer une commander Processing classique au fichier de broderie, il faut ajouter "E." devant la commande.
+
+Le principe du motif génératif utilisé pour ce projet est celui-ci : le motif de base (si le flex n'est pas manipulé pendant le temps de la loop) est un cercle. Dès que le flex est manipulé, sa résistance va changer, et un point du cercle va se rapprocher du centre. Plus fort le flex est écrasé, plus ce point se rapprochera du centre. De cette façon, si on manipule beaucoup le flex, on va obtenir un motif en soleil. 
+
+Voici quelques exemples de motifs générés et de leur résultat après broderie : 
+
+<img src="https://github.com/fablabke/Points_sensibles/assets/158562798/ea96af48-67ae-4b1f-b45b-e8bc103af293" width="400">
+<img src="https://github.com/fablabke/Points_sensibles/assets/158562798/fb60eb09-5e2b-452c-bfce-96fb95616c88" width="400">
+<img src="https://github.com/fablabke/Points_sensibles/assets/158562798/3d85187e-c7b8-479f-9e41-3e9f11438cfd" width="400">
+<img src="https://github.com/fablabke/Points_sensibles/assets/158562798/e005a65a-a7de-48c6-a230-291b2c258a67" width="400">
 
 
 
