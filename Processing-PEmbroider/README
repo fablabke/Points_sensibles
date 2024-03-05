@@ -1,1 +1,4 @@
 Ici se trouvent les fichiers Processing dans lesquels j'ai utilisé la librairie PEmbroider.
+Dans le dossier "archives" se trouvent des fichiers plus basiques, utiles si vous souhaitez comprendre chaque étape de la construction du projet : 
+- Un fichier pour illustrer le lien entre Processing et Arduino.
+- Un fichier avec les bases de PEmbroider (sans lien avec Arduino).
