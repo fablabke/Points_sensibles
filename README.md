@@ -57,7 +57,7 @@ Dans le dossier Archives, vous trouverez également des fichiers Processing qui 
 
 Leur Github est très riches en explications, exemples et liste de commandes. Il faut cependant être familiarisé avec Processing pour pouvoir l'exploiter au maximum, étant donné que la librairie se base beaucoup sur des commandes existantes, les transposant simplement à la génération d'un fichier de broderie plutôt que d'un visuel simple.
 
-Voici quelques conseil qui m'ont aidé durant mes expérimentations : 
+Voici quelques conseils qui m'ont aidé durant mes expérimentations : 
 - PEmbroider ne fonctionne que dans le "void setup", pour un motif génératif en direct et donc pour pouvoir utiliser les données du flex en temps réel, il faut donc créer une loop dans le "setup" au lieu de travailler dans le "draw".
 - Pour appliquer une commander Processing classique au fichier de broderie, il faut ajouter "E." devant la commande.
 
