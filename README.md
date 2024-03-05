@@ -11,14 +11,13 @@ La résidence a abouti lors d'un événement à la MCCS, "Dimanche à la maison"
 
 
 
-<img src="[https://your-image-url.type](https://github.com/fablabke/Points_sensibles/assets/158562798/7397e322-5d9b-425c-a663-87855a1b97e4)https://github.com/fablabke/Points_sensibles/assets/158562798/7397e322-5d9b-425c-a663-87855a1b97e4" width="100" height="100">
 
 
 
 
 
 
-
+<img src="https://github.com/fablabke/Points_sensibles/assets/158562798/c6e85712-678d-417f-9720-ae37dcbf2d97" width="500">
 
 
 
