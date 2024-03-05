@@ -1,4 +1,8 @@
 Ici se trouvent les fichiers Processing dans lesquels j'ai utilisé la librairie PEmbroider.
+
+Le fichier "points-sensibles_fichier-processing" est celui qui a été utilisé pour l'événement "Dimanche à la Maison", et le fichier final de la résidence.
+
 Dans le dossier "archives" se trouvent des fichiers plus basiques, utiles si vous souhaitez comprendre chaque étape de la construction du projet : 
 - Un fichier pour illustrer le lien entre Processing et Arduino.
 - Un fichier avec les bases de PEmbroider (sans lien avec Arduino).
+- Un fichier avec un premier test qui lie Arduino et la librairie PEmbroider dans Processing.
